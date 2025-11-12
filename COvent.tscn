@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bg6ofmgk54fpr"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_vd4ep"]
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 720.0
+inherit_velocity_ratio = 0.463
+spread = 180.0
+initial_velocity_max = 486.11
+gravity = Vector3(0, 0, 0)
+collision_mode = 1
+collision_friction = 0.0
+collision_bounce = 0.0
+
+[node name="GPUParticles2D" type="GPUParticles2D"]
+amount = 60
+trail_enabled = true
+trail_lifetime = 3.4
+trail_sections = 17
+process_material = SubResource("ParticleProcessMaterial_vd4ep")

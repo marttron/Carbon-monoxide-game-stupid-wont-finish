@@ -1,0 +1,31 @@
+[gd_resource type="TileSet" load_steps=7 format=3]
+
+[ext_resource type="Texture2D" uid="uid://balmxr1xrlsqc" path="res://GarbageGrass.png" id="1_wkm2h"]
+[ext_resource type="Texture2D" uid="uid://d2d8or6ug6yyu" path="res://GarbagePath.png" id="2_feupa"]
+[ext_resource type="Texture2D" uid="uid://dwbc5ex5ong6d" path="res://GarbageRockwall.png" id="3_i6ngc"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k1yf3"]
+texture = ExtResource("1_wkm2h")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_awkd8"]
+texture = ExtResource("2_feupa")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_niqkv"]
+texture = ExtResource("3_i6ngc")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[resource]
+sources/0 = SubResource("TileSetAtlasSource_k1yf3")
+sources/1 = SubResource("TileSetAtlasSource_awkd8")
+sources/2 = SubResource("TileSetAtlasSource_niqkv")

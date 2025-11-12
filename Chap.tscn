@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://ca0d8a3n1mob4"]
+
+[ext_resource type="Script" uid="uid://ba6jmhowaku8k" path="res://chapmovement.gd" id="1_bwjeu"]
+[ext_resource type="Texture2D" uid="uid://8x7541njbhj7" path="res://GarbageGuy.png" id="1_dpj2i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bwjeu"]
+size = Vector2(17, 33)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3whvq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dpj2i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_bwjeu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -4.5)
+shape = SubResource("RectangleShape2D_bwjeu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-4.7683716e-07, -3.7499993)
+scale = Vector2(0.65625, 0.5546875)
+sprite_frames = SubResource("SpriteFrames_3whvq")
